@@ -1,6 +1,6 @@
 import React from 'react';
 import { links } from '../data/content';
-import { InstagramIcon, TripadvisorIcon } from './SocialIcons';
+import { InstagramIcon, TripadvisorIcon, WhatsappIcon } from './SocialIcons';
 
 export default function Footer({ t }) {
   return (
@@ -37,28 +37,70 @@ export default function Footer({ t }) {
             </div>
 
             {/* Social Links */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '18px', marginTop: '6px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '6px' }}>
               <a
                 href={links.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                style={{ color: 'rgba(247,239,207,0.88)', display: 'inline-flex', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}
+                style={{
+                  width: '38px',
+                  height: '38px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: '50%',
+                  backgroundColor: 'rgba(247,239,207,0.08)',
+                  border: '1px solid rgba(247,239,207,0.3)',
+                  color: 'rgba(247,239,207,0.88)',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#F6C744';
+                  e.currentTarget.style.borderColor = '#F6C744';
+                  e.currentTarget.style.color = '#123A1E';
+                  e.currentTarget.style.transform = 'scale(1.08)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(247,239,207,0.08)';
+                  e.currentTarget.style.borderColor = 'rgba(247,239,207,0.3)';
+                  e.currentTarget.style.color = 'rgba(247,239,207,0.88)';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
               >
-                <InstagramIcon size={20} />
+                <InstagramIcon size={17} />
               </a>
               <a
                 href={links.tripAdvisorUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TripAdvisor"
-                style={{ color: 'rgba(247,239,207,0.88)', display: 'inline-flex', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}
+                style={{
+                  width: '38px',
+                  height: '38px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: '50%',
+                  backgroundColor: 'rgba(247,239,207,0.08)',
+                  border: '1px solid rgba(247,239,207,0.3)',
+                  color: 'rgba(247,239,207,0.88)',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#F6C744';
+                  e.currentTarget.style.borderColor = '#F6C744';
+                  e.currentTarget.style.color = '#123A1E';
+                  e.currentTarget.style.transform = 'scale(1.08)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(247,239,207,0.08)';
+                  e.currentTarget.style.borderColor = 'rgba(247,239,207,0.3)';
+                  e.currentTarget.style.color = 'rgba(247,239,207,0.88)';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
               >
-                <TripadvisorIcon size={22} />
+                <TripadvisorIcon size={19} />
               </a>
             </div>
           </div>
@@ -90,20 +132,27 @@ export default function Footer({ t }) {
             <div style={{ fontFamily: 'var(--font-oswald)', fontSize: '11px', letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(247,239,207,0.75)' }}>
               {t.footerContato}
             </div>
-            <a href={links.whatsappUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(247,239,207,0.88)', fontSize: '15px' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')} onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}>
-              WhatsApp &mdash; (21) 96610-5728
+            <a
+              href={links.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '9px', color: 'rgba(247,239,207,0.88)', fontSize: '15px' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}
+            >
+              <WhatsappIcon size={16} />
+              (21) 96610-5728
             </a>
-            <a href={links.instagramUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(247,239,207,0.88)', fontSize: '15px' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')} onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}>
-              Instagram @araa.brasil
-            </a>
-            <a href={links.tripAdvisorUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(247,239,207,0.88)', fontSize: '15px' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')} onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}>
-              TripAdvisor
-            </a>
-            <a href={links.mapsUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(247,239,207,0.88)', fontSize: '15px' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')} onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}>
-              Google Maps
-            </a>
-            <a href={links.reservaUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(247,239,207,0.88)', fontSize: '15px' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')} onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}>
-              {t.navReservar}
+            <a
+              href={links.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '9px', color: 'rgba(247,239,207,0.88)', fontSize: '15px' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(247,239,207,0.88)')}
+            >
+              <InstagramIcon size={16} />
+              @araa.brasil
             </a>
           </div>
 

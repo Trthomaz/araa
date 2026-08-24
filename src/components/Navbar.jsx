@@ -101,28 +101,70 @@ export default function Navbar({ lang, setLang, t }) {
             ))}
 
             {/* Social Links */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <a
                 href={links.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                style={{ color: 'rgba(245,231,190,0.86)', display: 'inline-flex', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(245,231,190,0.86)')}
+                style={{
+                  width: '34px',
+                  height: '34px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: '50%',
+                  backgroundColor: 'rgba(245,231,190,0.1)',
+                  border: '1px solid rgba(245,231,190,0.28)',
+                  color: 'rgba(245,231,190,0.9)',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#F6C744';
+                  e.currentTarget.style.borderColor = '#F6C744';
+                  e.currentTarget.style.color = '#123A1E';
+                  e.currentTarget.style.transform = 'scale(1.08)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(245,231,190,0.1)';
+                  e.currentTarget.style.borderColor = 'rgba(245,231,190,0.28)';
+                  e.currentTarget.style.color = 'rgba(245,231,190,0.9)';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
               >
-                <InstagramIcon size={17} />
+                <InstagramIcon size={16} />
               </a>
               <a
                 href={links.tripAdvisorUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TripAdvisor"
-                style={{ color: 'rgba(245,231,190,0.86)', display: 'inline-flex', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#F6C744')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(245,231,190,0.86)')}
+                style={{
+                  width: '34px',
+                  height: '34px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: '50%',
+                  backgroundColor: 'rgba(245,231,190,0.1)',
+                  border: '1px solid rgba(245,231,190,0.28)',
+                  color: 'rgba(245,231,190,0.9)',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#F6C744';
+                  e.currentTarget.style.borderColor = '#F6C744';
+                  e.currentTarget.style.color = '#123A1E';
+                  e.currentTarget.style.transform = 'scale(1.08)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(245,231,190,0.1)';
+                  e.currentTarget.style.borderColor = 'rgba(245,231,190,0.28)';
+                  e.currentTarget.style.color = 'rgba(245,231,190,0.9)';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
               >
-                <TripadvisorIcon size={19} />
+                <TripadvisorIcon size={18} />
               </a>
             </div>
 
@@ -317,16 +359,26 @@ export default function Navbar({ lang, setLang, t }) {
           </a>
 
           {/* Social Links */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '28px', paddingTop: '6px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', paddingTop: '6px' }}>
             <a
               href={links.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
               onClick={handleLinkClick}
-              style={{ color: '#F7EFCF', display: 'inline-flex' }}
+              style={{
+                width: '48px',
+                height: '48px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(247,239,207,0.08)',
+                border: '1px solid rgba(247,239,207,0.3)',
+                color: '#F7EFCF'
+              }}
             >
-              <InstagramIcon size={22} />
+              <InstagramIcon size={21} />
             </a>
             <a
               href={links.tripAdvisorUrl}
@@ -334,9 +386,19 @@ export default function Navbar({ lang, setLang, t }) {
               rel="noopener noreferrer"
               aria-label="TripAdvisor"
               onClick={handleLinkClick}
-              style={{ color: '#F7EFCF', display: 'inline-flex' }}
+              style={{
+                width: '48px',
+                height: '48px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(247,239,207,0.08)',
+                border: '1px solid rgba(247,239,207,0.3)',
+                color: '#F7EFCF'
+              }}
             >
-              <TripadvisorIcon size={24} />
+              <TripadvisorIcon size={23} />
             </a>
           </div>
         </div>

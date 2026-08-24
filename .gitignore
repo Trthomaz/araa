@@ -32,3 +32,5 @@ lerna-debug.log*
 # site actually uses live in assets/ and public/assets/
 /images/
 /uploads/
+
+node_modules/
