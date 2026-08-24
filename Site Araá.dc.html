@@ -16,7 +16,7 @@
   body { margin: 0; background: #F5E7BE; color: #123A1E; -webkit-font-smoothing: antialiased; }
   * { box-sizing: border-box; }
   a { color: #123A1E; text-decoration: none; }
-  a:hover { color: #D9342B; }
+  a:hover { color: #85862E; }
   ::selection { background: #F6C744; color: #123A1E; }
   .araa-rail::-webkit-scrollbar { display: none; }
   @keyframes araaUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
@@ -40,7 +40,7 @@
     <div style="max-width: 1280px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 28px">
       <a href="#topo" style="display: flex; align-items: center; gap: 10px; color: #F5E7BE; flex: 0 0 auto">
         <img src="assets/logo-yellow.png" alt="" style="width: 26px; height: 26px; display: block" />
-        <span style="font-family: 'Kumbh Sans', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 0.16em; color: #F5E7BE">ARA&Aacute;</span>
+        <img src="assets/marca-cream.png" alt="ARA&Aacute;" style="height: 19px; width: auto; display: block" />
       </a>
       <div class="araa-nav-links" style="display: flex; align-items: center; gap: 22px; margin-left: auto; flex-wrap: wrap; justify-content: flex-end">
         <a href="#cardapio" style="font-family: Oswald, sans-serif; font-weight: 400; font-size: 13px; letter-spacing: 0.13em; text-transform: uppercase; color: rgba(245,231,190,0.86)" style-hover="color: #F6C744">{{ navMenu }}</a>
@@ -49,23 +49,22 @@
         <a href="#local" style="font-family: Oswald, sans-serif; font-weight: 400; font-size: 13px; letter-spacing: 0.13em; text-transform: uppercase; color: rgba(245,231,190,0.86)" style-hover="color: #F6C744">{{ navLocal }}</a>
         <a href="#faq" style="font-family: Oswald, sans-serif; font-weight: 400; font-size: 13px; letter-spacing: 0.13em; text-transform: uppercase; color: rgba(245,231,190,0.86)" style-hover="color: #F6C744">{{ navFaq }}</a>
         <button onClick="{{ toggleLang }}" style="font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.12em; background: transparent; color: rgba(245,231,190,0.7); border: 1px solid rgba(245,231,190,0.35); border-radius: 999px; padding: 6px 12px; cursor: pointer" style-hover="color: #F6C744; border-color: #F6C744">{{ langLabel }}</button>
-        <a href="{{ reservaUrl }}" target="_blank" rel="noopener" style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.13em; text-transform: uppercase; background: #D9342B; color: #F5E7BE; padding: 10px 20px; border-radius: 999px" style-hover="background: #F6C744; color: #123A1E">{{ navReservar }}</a>
+        <a href="{{ reservaUrl }}" target="_blank" rel="noopener" style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.13em; text-transform: uppercase; background: #F6C744; color: #123A1E; padding: 10px 20px; border-radius: 999px" style-hover="background: #F7EFCF; color: #123A1E">{{ navReservar }}</a>
       </div>
     </div>
   </nav>
 
   <header id="topo" style="position: relative; min-height: 100vh; min-height: 100dvh; display: flex; align-items: flex-end; background: #123A1E; overflow: hidden">
-    <img src="assets/vista.jpg" alt="Vista do Rio de Janeiro a partir do Morro da Urca" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%" />
+    <img src="assets/praia.jpg" alt="Vista do Rio de Janeiro a partir do Morro da Urca" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%" />
     <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,58,30,0.72) 0%, rgba(18,58,30,0.35) 38%, rgba(18,58,30,0.9) 100%)"></div>
-    <div style="position: absolute; inset: 22px; border: 1px solid rgba(245,231,190,0.38); border-radius: 44px; pointer-events: none"></div>
     <div class="araa-hero-inner" style="position: relative; width: 100%; max-width: 1280px; margin: 0 auto; padding: 130px clamp(22px, 5vw, 60px) 74px; display: grid; gap: 34px">
       <div style="display: flex; align-items: center; gap: 12px; font-family: Oswald, sans-serif; font-size: 13px; letter-spacing: 0.34em; text-transform: uppercase; color: #F6C744; animation: araaUp 0.9s cubic-bezier(0.16,1,0.3,1) both">
         <span>Restaurante</span><img src="assets/logo-yellow.png" alt="" style="width: 15px; height: 15px; animation: araaFloat 7s ease-in-out infinite" /><span>Morro da Urca</span>
       </div>
-      <h1 style="animation: araaUp 1s cubic-bezier(0.16,1,0.3,1) 0.1s both; margin: 0; font-family: 'Kumbh Sans', sans-serif; font-weight: 700; font-size: clamp(60px, 12vw, 168px); line-height: 0.86; letter-spacing: 0.06em; color: #F7EFCF">ARA&Aacute;</h1>
+      <h1 style="animation: araaUp 1s cubic-bezier(0.16,1,0.3,1) 0.1s both; margin: 0; line-height: 0"><img src="assets/marca-cream.png" alt="ARA&Aacute;" style="width: clamp(230px, 46vw, 640px); height: auto; display: block" /></h1>
       <p style="animation: araaUp 1s cubic-bezier(0.16,1,0.3,1) 0.2s both; margin: 0; max-width: 620px; font-size: clamp(19px, 2vw, 25px); line-height: 1.45; color: rgba(247,239,207,0.94); text-wrap: pretty">{{ heroLead }}</p>
       <div style="animation: araaUp 1s cubic-bezier(0.16,1,0.3,1) 0.3s both; display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
-        <a href="{{ reservaUrl }}" target="_blank" rel="noopener" style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; background: #D9342B; color: #F7EFCF; padding: 17px 34px; border-radius: 999px" style-hover="background: #F6C744; color: #123A1E">{{ heroCtaReserva }}</a>
+        <a href="{{ reservaUrl }}" target="_blank" rel="noopener" style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; background: #F6C744; color: #123A1E; padding: 17px 34px; border-radius: 999px" style-hover="background: #F7EFCF; color: #123A1E">{{ heroCtaReserva }}</a>
         <a href="#cardapio" style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid rgba(247,239,207,0.6); color: #F7EFCF; padding: 17px 34px; border-radius: 999px" style-hover="background: #F7EFCF; color: #123A1E">{{ heroCtaMenu }}</a>
       </div>
       <div style="animation: araaUp 1s cubic-bezier(0.16,1,0.3,1) 0.42s both; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(247,239,207,0.72); padding-top: 8px; border-top: 1px solid rgba(247,239,207,0.22)">
@@ -75,7 +74,7 @@
   </header>
 
   <section class="araa-section" style="position: relative; background: #F5E7BE; padding: 110px 24px; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-dark.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.16; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-cream.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.55; pointer-events: none"></div>
     <div class="araa-split" data-reveal="" style="position: relative; max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 68px; align-items: center">
       <div style="display: grid; gap: 26px">
         <div style="display: flex; align-items: center; gap: 10px; font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #85862E">
@@ -85,7 +84,7 @@
         <p style="margin: 0; font-size: 18px; line-height: 1.62; color: rgba(18,58,30,0.86); text-wrap: pretty">{{ sobreP1 }}</p>
         <p style="margin: 0; font-size: 18px; line-height: 1.62; color: rgba(18,58,30,0.86); text-wrap: pretty">{{ sobreP2 }}</p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 18px; margin-top: 8px">
-          <div style="border-top: 2px solid #D9342B; padding-top: 12px">
+          <div style="border-top: 2px solid #F6C744; padding-top: 12px">
             <div style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 34px; color: #123A1E">100%</div>
             <div style="font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #85862E">{{ stat1 }}</div>
           </div>
@@ -101,7 +100,6 @@
       </div>
       <div style="position: relative">
         <img src="assets/foto-cafe.jpg" alt="Mesa de cafe da manha do Araa" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 32px; display: block" />
-        <div style="position: absolute; inset: 14px; border: 1px solid rgba(247,239,207,0.75); border-radius: 24px; pointer-events: none"></div>
       </div>
     </div>
   </section>
@@ -117,7 +115,7 @@
   </section>
 
   <section id="cardapio" class="araa-section" style="position: relative; background: #85862E; padding: 100px 24px 120px; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-light.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.22; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-olive.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.5; pointer-events: none"></div>
     <div style="position: relative; max-width: 1180px; margin: 0 auto">
       <div style="text-align: center; display: grid; gap: 16px; justify-items: center; margin-bottom: 54px">
         <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F5E7BE"><img src="assets/logo-cream.png" alt="" style="width: 15px; height: 15px" />{{ menuKicker }}</div>
@@ -128,7 +126,7 @@
       <div class="araa-paper" data-reveal="" style="position: relative; background: #FAF0CE; border-radius: 26px; padding: 56px clamp(24px, 5vw, 64px) 64px; box-shadow: 0 30px 70px rgba(18,58,30,0.28)">
         <div style="display: grid; justify-items: center; gap: 6px; padding-bottom: 26px; border-bottom: 1.5px solid rgba(18,58,30,0.45)">
           <img src="assets/logo-green.png" alt="Logo Araa" style="width: 30px; height: 30px" />
-          <div style="font-family: 'Kumbh Sans', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 0.14em; text-indent: 0.14em; color: #123A1E">ARA&Aacute;</div>
+          <img src="assets/marca-green.png" alt="ARA&Aacute;" style="height: 28px; width: auto; display: block" />
           <div style="font-family: Oswald, sans-serif; font-size: 9.5px; letter-spacing: 0.34em; text-indent: 0.34em; text-transform: uppercase; color: rgba(18,58,30,0.85)">Gastronomia &#10033; Brasilidade</div>
         </div>
 
@@ -160,14 +158,14 @@
           <span>{{ legendaV }}</span><span>{{ legendaVG }}</span><span>{{ legendaCompartilhar }}</span>
         </div>
         <div style="display: flex; justify-content: center; margin-top: 30px">
-          <a href="https://livemenu.app/menu/6932e39d799ffa9c8338b779" target="_blank" rel="noopener" style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; background: #123A1E; color: #FAF0CE; padding: 15px 30px; border-radius: 999px" style-hover="background: #D9342B">{{ menuCta }}</a>
+          <a href="https://livemenu.app/menu/6932e39d799ffa9c8338b779" target="_blank" rel="noopener" style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; background: #123A1E; color: #FAF0CE; padding: 15px 30px; border-radius: 999px" style-hover="background: #85862E">{{ menuCta }}</a>
         </div>
       </div>
     </div>
   </section>
 
   <section id="espaco" class="araa-section" style="position: relative; background: #123A1E; padding: 110px 0 120px; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-tropico-light.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.3; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-green.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.55; pointer-events: none"></div>
     <div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 0 24px">
       <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 40px">
         <div style="display: grid; gap: 14px; max-width: 620px">
@@ -195,11 +193,10 @@
   </section>
 
   <section id="eventos" class="araa-section" style="position: relative; background: #F5E7BE; padding: 110px 24px; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-dark.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.16; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-cream.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.55; pointer-events: none"></div>
     <div class="araa-split" data-reveal="" style="position: relative; max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 62px; align-items: center">
       <div style="position: relative">
         <img src="assets/espaco-corredor.jpg" alt="Salao principal corredor" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 32px; display: block" />
-        <div style="position: absolute; inset: 14px; border: 1px solid rgba(247,239,207,0.7); border-radius: 24px; pointer-events: none"></div>
       </div>
       <div style="display: grid; gap: 24px">
         <div style="display: flex; align-items: center; gap: 10px; font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #85862E"><img src="assets/logo-green.png" alt="" style="width: 15px; height: 15px; opacity: 0.85" />{{ eventosKicker }}</div>
@@ -208,18 +205,18 @@
         <div style="display: grid; gap: 12px">
           <sc-for list="{{ eventosItens }}" as="ev" hint-placeholder-count="4">
             <div style="display: flex; gap: 12px; align-items: baseline; border-bottom: 1px solid rgba(18,58,30,0.18); padding-bottom: 12px">
-              <img src="assets/logo-red.png" alt="" style="width: 13px; height: 13px; flex: 0 0 auto" />
+              <img src="assets/logo-yellow.png" alt="" style="width: 13px; height: 13px; flex: 0 0 auto" />
               <span style="font-family: Oswald, sans-serif; font-weight: 400; font-size: 16px; letter-spacing: 0.02em; color: #123A1E">{{ ev }}</span>
             </div>
           </sc-for>
         </div>
-        <a href="{{ whatsappUrl }}" target="_blank" rel="noopener" style="justify-self: start; font-family: Oswald, sans-serif; font-weight: 500; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; background: #123A1E; color: #F5E7BE; padding: 16px 30px; border-radius: 999px" style-hover="background: #D9342B">{{ eventosCta }}</a>
+        <a href="{{ whatsappUrl }}" target="_blank" rel="noopener" style="justify-self: start; font-family: Oswald, sans-serif; font-weight: 500; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; background: #123A1E; color: #F5E7BE; padding: 16px 30px; border-radius: 999px" style-hover="background: #85862E">{{ eventosCta }}</a>
       </div>
     </div>
   </section>
 
   <section id="reservas" style="position: relative; background: #F5E7BE; padding: 20px 24px 110px; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-dark.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.16; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-cream.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.55; pointer-events: none"></div>
     <div style="position: relative; max-width: 1180px; margin: 0 auto">
       <div style="display: grid; gap: 14px; max-width: 680px; margin-bottom: 44px">
         <div style="display: flex; align-items: center; gap: 10px; font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #85862E"><img src="assets/logo-green.png" alt="" style="width: 15px; height: 15px; opacity: 0.85" />{{ reservasKicker }}</div>
@@ -233,14 +230,14 @@
           <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(247,239,207,0.82)">{{ reservaCard1Texto }}</p>
           <a href="{{ reservaUrl }}" target="_blank" rel="noopener" style="justify-self: start; margin-top: 6px; font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; background: #F6C744; color: #123A1E; padding: 14px 26px; border-radius: 999px" style-hover="background: #F7EFCF">{{ reservaCard1Cta }}</a>
         </div>
-        <div style="background: #D9342B; border-radius: 24px; padding: 34px; display: grid; gap: 16px; align-content: start">
-          <img src="assets/logo-cream.png" alt="" style="width: 40px; height: 40px" />
-          <h3 style="margin: 0; font-family: Oswald, sans-serif; font-weight: 600; font-size: 24px; text-transform: uppercase; color: #FAF0CE">{{ reservaCard2Titulo }}</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(250,240,206,0.9)">{{ reservaCard2Texto }}</p>
-          <a href="{{ whatsappUrl }}" target="_blank" rel="noopener" style="justify-self: start; margin-top: 6px; font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; background: #FAF0CE; color: #123A1E; padding: 14px 26px; border-radius: 999px" style-hover="background: #123A1E; color: #FAF0CE">{{ reservaCard2Cta }}</a>
+        <div style="background: #F6C744; border-radius: 24px; padding: 34px; display: grid; gap: 16px; align-content: start">
+          <img src="assets/logo-green.png" alt="" style="width: 40px; height: 40px" />
+          <h3 style="margin: 0; font-family: Oswald, sans-serif; font-weight: 600; font-size: 24px; text-transform: uppercase; color: #123A1E">{{ reservaCard2Titulo }}</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(18,58,30,0.86)">{{ reservaCard2Texto }}</p>
+          <a href="{{ whatsappUrl }}" target="_blank" rel="noopener" style="justify-self: start; margin-top: 6px; font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; background: #123A1E; color: #FAF0CE; padding: 14px 26px; border-radius: 999px" style-hover="background: #FAF0CE; color: #123A1E">{{ reservaCard2Cta }}</a>
         </div>
         <div style="background: #F5E7BE; border: 1.5px solid rgba(18,58,30,0.35); border-radius: 24px; padding: 34px; display: grid; gap: 16px; align-content: start">
-          <img src="assets/logo-red.png" alt="" style="width: 40px; height: 40px" />
+          <img src="assets/logo-yellow.png" alt="" style="width: 40px; height: 40px" />
           <h3 style="margin: 0; font-family: Oswald, sans-serif; font-weight: 600; font-size: 24px; text-transform: uppercase; color: #123A1E">{{ reservaCard3Titulo }}</h3>
           <p style="margin: 0; font-size: 16px; line-height: 1.55; color: rgba(18,58,30,0.82)">{{ reservaCard3Texto }}</p>
           <a href="https://www.parquebondinho.com" target="_blank" rel="noopener" style="justify-self: start; margin-top: 6px; font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; border: 1.5px solid #123A1E; color: #123A1E; padding: 14px 26px; border-radius: 999px" style-hover="background: #123A1E; color: #FAF0CE">{{ reservaCard3Cta }}</a>
@@ -250,7 +247,7 @@
   </section>
 
   <section id="local" class="araa-section" style="position: relative; background: #123A1E; padding: 110px 24px 120px; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-tropico-light.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.22; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-green.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.55; pointer-events: none"></div>
     <div class="araa-split" data-reveal="" style="position: relative; max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 54px; align-items: start">
       <div style="display: grid; gap: 26px">
         <div style="display: flex; align-items: center; gap: 10px; font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F6C744"><img src="assets/logo-yellow.png" alt="" style="width: 15px; height: 15px" />{{ localKicker }}</div>
@@ -281,7 +278,7 @@
   </section>
 
   <section id="faq" class="araa-section" style="position: relative; background: #F5E7BE; padding: 110px 24px 120px; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-dark.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.13; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-cream.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.5; pointer-events: none"></div>
     <div data-reveal="" style="position: relative; max-width: 900px; margin: 0 auto">
       <div style="display: grid; gap: 14px; justify-items: center; text-align: center; margin-bottom: 44px">
         <div style="display: flex; align-items: center; gap: 10px; font-family: Oswald, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #85862E"><img src="assets/logo-green.png" alt="" style="width: 15px; height: 15px; opacity: 0.85" />FAQ</div>
@@ -292,7 +289,7 @@
           <div style="background: #FAF0CE; border: 1px solid rgba(18,58,30,0.2); border-radius: 18px; overflow: hidden">
             <button onClick="{{ f.toggle }}" style="width: 100%; display: flex; align-items: center; gap: 16px; text-align: left; background: transparent; border: 0; padding: 20px 24px; cursor: pointer">
               <span style="font-family: Oswald, sans-serif; font-weight: 500; font-size: 17px; letter-spacing: 0.02em; color: #123A1E; flex: 1">{{ f.q }}</span>
-              <span style="font-family: Oswald, sans-serif; font-size: 22px; color: #D9342B; line-height: 1">{{ f.sinal }}</span>
+              <span style="font-family: Oswald, sans-serif; font-size: 22px; color: #85862E; line-height: 1">{{ f.sinal }}</span>
             </button>
             <sc-if value="{{ f.aberto }}" hint-placeholder-val="{{ false }}">
               <p style="margin: 0; padding: 0 24px 22px; font-size: 16.5px; line-height: 1.6; color: rgba(18,58,30,0.84); text-wrap: pretty">{{ f.a }}</p>
@@ -304,11 +301,11 @@
   </section>
 
   <footer style="position: relative; background: #123A1E; padding: 74px 24px 40px; border-top: 6px solid #85862E; overflow: hidden">
-    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-tropico-light.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.2; pointer-events: none"></div>
+    <div style="position: absolute; inset: 0; background-image: url(assets/pattern-fruits-green.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.55; pointer-events: none"></div>
     <div style="position: relative; max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 42px; align-items: start">
       <div style="display: grid; gap: 14px; justify-items: start">
         <img src="assets/logo-yellow.png" alt="Logo Araa" style="width: 46px; height: 46px" />
-        <div style="font-family: 'Kumbh Sans', sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.16em; color: #F7EFCF">ARA&Aacute;</div>
+        <img src="assets/marca-cream.png" alt="ARA&Aacute;" style="height: 32px; width: auto; display: block" />
         <div style="font-family: Oswald, sans-serif; font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(247,239,207,0.7)">Morro da Urca &#10033; Rio de Janeiro</div>
       </div>
       <div style="display: grid; gap: 10px">
@@ -337,9 +334,8 @@
     </div>
   </footer>
 
-  <a href="{{ whatsappUrl }}" target="_blank" rel="noopener" style="position: fixed; right: 22px; bottom: 22px; z-index: 95; display: flex; align-items: center; gap: 10px; background: #123A1E; color: #F7EFCF; border: 1px solid rgba(247,239,207,0.35); padding: 14px 22px; border-radius: 999px; box-shadow: 0 14px 34px rgba(18,58,30,0.42); font-family: Oswald, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase" style-hover="background: #D9342B">
-    <img src="assets/logo-yellow.png" alt="" style="width: 17px; height: 17px" />
-    <span>WhatsApp</span>
+  <a href="{{ whatsappUrl }}" target="_blank" rel="noopener" aria-label="WhatsApp" style="position: fixed; right: 22px; bottom: 22px; z-index: 95; display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; background: #123A1E; border: 1.5px solid rgba(247,239,207,0.5); border-radius: 50%; box-shadow: 0 14px 34px rgba(18,58,30,0.42)" style-hover="background: #85862E">
+    <svg width="30" height="30" viewBox="0 0 448 512" fill="#F7EFCF"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 38.4 58.9 93 80.2 46.4 18.2 55.8 15.5 65.9 14.6 12.4-1.1 30.6-12.6 34.9-24.8 4.3-12.2 4.3-22.6 3-24.8-1.3-2.1-4.7-3.3-9.9-6.1z"/></svg>
   </a>
 </div>
 </x-dc>

@@ -1,3 +1,10 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
 # Logs
 logs
 *.log
@@ -7,9 +14,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Env
 *.local
 
 # Editor directories and files
@@ -22,3 +27,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw photo drops used as source material — processed copies that the
+# site actually uses live in assets/ and public/assets/
+/images/
+/uploads/
