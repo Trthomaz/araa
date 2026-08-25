@@ -177,7 +177,17 @@ button {
   pointer-events: none;
 }
 
-/* Mobile backdrop fix for iOS */
+/* background-attachment: fixed is janky/buggy on mobile browsers (the
+   dynamic address bar resizing the viewport makes it visibly jump and
+   "resize" while scrolling) — disable it on touch devices and iOS. */
+@media (hover: none), (pointer: coarse) {
+  .bg-texture-cream,
+  .bg-texture-green,
+  .bg-texture-olive {
+    background-attachment: scroll;
+  }
+}
+
 @supports (-webkit-touch-callout: none) {
   .bg-texture-cream,
   .bg-texture-green,
