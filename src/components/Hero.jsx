@@ -193,8 +193,6 @@ export default function Hero({ t }) {
           <span>{t.heroTag1}</span>
           <img src="/assets/logo-cream.png" alt="" style={{ width: '12px', height: '12px', opacity: 0.7 }} />
           <span>{t.heroTag2}</span>
-          <img src="/assets/logo-cream.png" alt="" style={{ width: '12px', height: '12px', opacity: 0.7 }} />
-          <span>{t.heroTag3}</span>
         </div>
       </div>
     </header>

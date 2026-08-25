@@ -40,7 +40,7 @@ export default function MenuSection({ t }) {
           }}
         >
           {/* Card Top Brand */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', paddingBottom: '22px', borderBottom: '1.5px solid rgba(18,58,30,0.45)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', paddingBottom: '22px', borderBottom: '1.5px solid rgba(18,58,30,0.35)' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
               <img src="/assets/logo-green.png" alt="Logo Araá" style={{ width: '30px', height: '30px', objectFit: 'contain' }} />
               <img src="/assets/marca-green.png" alt="ARAÁ" style={{ height: '26px', width: 'auto', display: 'block' }} />
@@ -62,7 +62,8 @@ export default function MenuSection({ t }) {
               overflowX: 'auto',
               WebkitOverflowScrolling: 'touch',
               marginTop: '24px',
-              paddingBottom: '8px'
+              paddingBottom: '16px',
+              borderBottom: '1.5px solid rgba(18,58,30,0.35)'
             }}
           >
             {secoes.map((secao, idx) => {
@@ -101,8 +102,6 @@ export default function MenuSection({ t }) {
               alignItems: 'center',
               gap: '16px',
               margin: '36px 0 20px',
-              paddingBottom: '16px',
-              borderBottom: '1.5px solid rgba(18,58,30,0.22)',
               flexWrap: 'wrap'
             }}
           >
@@ -199,45 +198,11 @@ export default function MenuSection({ t }) {
             ))}
           </div>
 
-          {/* Legend */}
-          <div
-            className="araa-legend"
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '10px 22px',
-              justifyContent: 'center',
-              marginTop: '32px',
-              paddingTop: '22px',
-              borderTop: '1.5px solid rgba(18,58,30,0.4)',
-              fontFamily: 'var(--font-oswald)',
-              fontSize: '11px',
-              letterSpacing: '0.14em',
-              textTransform: 'uppercase',
-              color: 'rgba(18,58,30,0.75)'
-            }}
-          >
-            <style>{`
-              @media (max-width: 560px) {
-                .araa-legend {
-                  flex-direction: column;
-                  align-items: center;
-                  gap: 10px !important;
-                }
-              }
-            `}</style>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
-              <img src="/assets/logo-green.png" alt="" style={{ width: '10px', height: '10px', opacity: 0.75 }} />
-              {t.legendaV}
-            </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
-              <img src="/assets/logo-green.png" alt="" style={{ width: '10px', height: '10px', opacity: 0.75 }} />
-              {t.legendaVG}
-            </span>
-          </div>
+          {/* Divider */}
+          <div style={{ marginTop: '32px', paddingTop: '22px', borderTop: '1.5px solid rgba(18,58,30,0.35)' }} />
 
           {/* CTA Full Menu */}
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '28px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
             <a
               href={links.cardapioLiveMenu}
               target="_blank"

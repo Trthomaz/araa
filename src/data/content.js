@@ -10,9 +10,8 @@ export const content = {
     heroLead: "Cada mesa, uma vista. Cada vista, uma história. Cozinha brasileira no alto do Morro da Urca, diante da Baía de Guanabara.",
     heroCtaReserva: "Reservar mesa",
     heroCtaMenu: "Ver cardápio",
-    heroTag1: "Café da manhã ao jantar",
-    heroTag2: "Ingredientes 100% brasileiros",
-    heroTag3: "Todos os dias",
+    heroTag1: "Do litoral ao sertão",
+    heroTag2: "Do norte ao sul",
 
     sobreKicker: "Essencialmente brasileiro",
     sobreTitulo: "A paisagem virou experiência. A comida, conexão.",
@@ -25,8 +24,6 @@ export const content = {
     menuKicker: "Do litoral ao sertão",
     menuTitulo: "Cardápio",
     menuLead: "Releituras de receitas brasileiras com técnica contemporânea. O cardápio muda com a estação e com o que chega de melhor dos nossos produtores.",
-    legendaV: "Vegetariano",
-    legendaVG: "Vegano",
     menuCta: "Abrir cardápio completo",
 
     secoes: [
@@ -204,9 +201,8 @@ export const content = {
     heroLead: "Every table has a view. Every view has a story. Brazilian cooking at the top of Morro da Urca, facing Guanabara Bay.",
     heroCtaReserva: "Book a table",
     heroCtaMenu: "See the menu",
-    heroTag1: "Breakfast to dinner",
-    heroTag2: "100% Brazilian ingredients",
-    heroTag3: "Open daily",
+    heroTag1: "From the coast to the backlands",
+    heroTag2: "From north to south",
 
     sobreKicker: "Essentially Brazilian",
     sobreTitulo: "The landscape became an experience. The food, a connection.",
@@ -219,8 +215,6 @@ export const content = {
     menuKicker: "From the coast to the backlands",
     menuTitulo: "Menu",
     menuLead: "Brazilian recipes reimagined with contemporary technique. The menu changes with the season and with the best our producers bring in.",
-    legendaV: "Vegetarian",
-    legendaVG: "Vegan",
     menuCta: "Open the full menu",
 
     secoes: [
