@@ -243,8 +243,8 @@ export default function Navbar({ lang, setLang, t }) {
                 fontSize: '12px',
                 letterSpacing: '0.12em',
                 background: 'transparent',
-                color: '#F6C744',
-                border: '1px solid rgba(246,199,68,0.5)',
+                color: 'rgba(245,231,190,0.8)',
+                border: '1px solid rgba(245,231,190,0.35)',
                 borderRadius: '999px',
                 padding: '4px 10px',
                 cursor: 'pointer'
