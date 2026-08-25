@@ -117,7 +117,7 @@ export default function MenuSection({ t }) {
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  width: 'clamp(235px, 29vw, 300px)',
+                  width: 'clamp(275px, 34vw, 350px)',
                   padding: '7px clamp(15px, 1.8vw, 18px) 7px clamp(12px, 1.4vw, 16px)',
                   backgroundColor: '#FAF0CE',
                   clipPath: 'polygon(11px 0, calc(100% - 11px) 0, 100% 50%, calc(100% - 11px) 100%, 11px 100%, 0 50%)'
