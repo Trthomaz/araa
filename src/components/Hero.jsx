@@ -5,6 +5,7 @@ export default function Hero({ t }) {
   return (
     <header
       id="topo"
+      className="araa-hero"
       style={{
         position: 'relative',
         minHeight: '100svh',
@@ -14,6 +15,14 @@ export default function Hero({ t }) {
         overflow: 'hidden'
       }}
     >
+      <style>{`
+        @media (max-width: 640px) {
+          .araa-hero {
+            min-height: min(100svh, 700px) !important;
+          }
+        }
+      `}</style>
+
       {/* Background Image */}
       <img
         src="/assets/praia.jpg"
