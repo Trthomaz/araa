@@ -108,76 +108,60 @@ export default function MenuSection({ t }) {
           >
             <div
               style={{
-                position: 'relative',
                 display: 'inline-flex',
-                alignItems: 'center',
-                padding: '8px clamp(20px, 3vw, 28px) 8px clamp(16px, 2.5vw, 22px)',
-                backgroundColor: '#FAF0CE'
+                padding: '3px',
+                backgroundColor: '#123A1E',
+                clipPath: 'polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%)'
               }}
             >
-              {/* SVG Banner Border */}
-              <svg
+              <div
                 style={{
-                  position: 'absolute',
-                  inset: 0,
-                  width: '100%',
-                  height: '100%',
-                  pointerEvents: 'none',
-                  overflow: 'visible'
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  width: 'clamp(235px, 29vw, 300px)',
+                  padding: '7px clamp(15px, 1.8vw, 18px) 7px clamp(12px, 1.4vw, 16px)',
+                  backgroundColor: '#FAF0CE',
+                  clipPath: 'polygon(11px 0, calc(100% - 11px) 0, 100% 50%, calc(100% - 11px) 100%, 11px 100%, 0 50%)'
                 }}
-                preserveAspectRatio="none"
-                viewBox="0 0 100 40"
               >
-                <polygon
-                  points="6,2 94,2 99.5,20 94,38 6,38 0.5,20"
-                  fill="none"
-                  stroke="#123A1E"
-                  strokeWidth="2.2"
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                />
-              </svg>
+                {/* Logo symbol */}
+                <div style={{ display: 'flex', alignItems: 'center', marginRight: '9px', flexShrink: 0 }}>
+                  <img src="/assets/logo-green.png" alt="" style={{ width: 'clamp(18px, 2.2vw, 24px)', height: 'clamp(18px, 2.2vw, 24px)' }} />
+                </div>
 
-              {/* Asterisk / Sun symbol */}
-              <div style={{ display: 'flex', alignItems: 'center', marginRight: '10px', flexShrink: 0 }}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#123A1E" strokeWidth="2.6" strokeLinecap="round">
-                  <line x1="12" y1="2.5" x2="12" y2="21.5" />
-                  <line x1="2.5" y1="12" x2="21.5" y2="12" />
-                  <line x1="5.28" y1="5.28" x2="18.72" y2="18.72" />
-                  <line x1="18.72" y1="5.28" x2="5.28" y2="18.72" />
-                </svg>
+                {/* Title Text */}
+                <span style={{ whiteSpace: 'nowrap' }}>
+                  <span
+                    style={{
+                      fontFamily: 'var(--font-oswald)',
+                      fontWeight: 600,
+                      fontSize: 'clamp(18px, 2.2vw, 24px)',
+                      letterSpacing: '0.06em',
+                      textTransform: 'uppercase',
+                      color: '#123A1E',
+                      lineHeight: 1.1
+                    }}
+                  >
+                    {currentSecao.titulo}
+                  </span>
+                  {currentSecao.nota && (
+                    <span
+                      style={{
+                        marginLeft: '6px',
+                        fontFamily: 'var(--font-oswald)',
+                        fontWeight: 400,
+                        fontSize: '13px',
+                        letterSpacing: '0.02em',
+                        textTransform: 'none',
+                        color: 'rgba(18,58,30,0.6)'
+                      }}
+                    >
+                      ({currentSecao.nota})
+                    </span>
+                  )}
+                </span>
               </div>
-
-              {/* Title Text */}
-              <span
-                style={{
-                  fontFamily: 'var(--font-oswald)',
-                  fontWeight: 600,
-                  fontSize: 'clamp(18px, 2.2vw, 24px)',
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase',
-                  color: '#123A1E',
-                  lineHeight: 1.1
-                }}
-              >
-                {currentSecao.titulo}
-              </span>
             </div>
-
-            {currentSecao.nota && (
-              <span
-                style={{
-                  fontFamily: 'var(--font-oswald)',
-                  fontWeight: 400,
-                  fontSize: '13px',
-                  letterSpacing: '0.12em',
-                  textTransform: 'uppercase',
-                  color: 'rgba(18,58,30,0.65)'
-                }}
-              >
-                {currentSecao.nota}
-              </span>
-            )}
           </div>
 
           {/* Section Items Grid */}
@@ -204,6 +188,11 @@ export default function MenuSection({ t }) {
                 {item.desc && (
                   <div style={{ fontFamily: 'var(--font-oswald)', fontWeight: 300, fontSize: '14.5px', lineHeight: 1.42, color: 'rgba(18,58,30,0.82)', paddingLeft: '8px', maxWidth: '48ch', textWrap: 'pretty' }}>
                     {item.desc}
+                  </div>
+                )}
+                {item.porcao && (
+                  <div style={{ fontFamily: 'var(--font-oswald)', fontWeight: 600, fontSize: '11px', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#123A1E', paddingLeft: '8px', marginTop: '2px' }}>
+                    {item.porcao}
                   </div>
                 )}
               </div>
@@ -244,10 +233,6 @@ export default function MenuSection({ t }) {
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
               <img src="/assets/logo-green.png" alt="" style={{ width: '10px', height: '10px', opacity: 0.75 }} />
               {t.legendaVG}
-            </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
-              <img src="/assets/logo-green.png" alt="" style={{ width: '10px', height: '10px', opacity: 0.75 }} />
-              {t.legendaCompartilhar}
             </span>
           </div>
 

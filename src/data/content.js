@@ -27,7 +27,6 @@ export const content = {
     menuLead: "Releituras de receitas brasileiras com técnica contemporânea. O cardápio muda com a estação e com o que chega de melhor dos nossos produtores.",
     legendaV: "Vegetariano",
     legendaVG: "Vegano",
-    legendaCompartilhar: "Grelhados: individual ou para compartilhar",
     menuCta: "Abrir cardápio completo",
 
     secoes: [
@@ -63,13 +62,13 @@ export const content = {
       },
       {
         titulo: "Grelhados",
-        nota: "individual ou para compartilhar",
+        nota: "",
         itens: [
-          { nome: "Picanha", desc: "Acompanha arroz branco, vinagrete da casa, batata frita e farofa com ovos.", tag: "" },
-          { nome: "Ancho", desc: "Acompanha arroz branco, vinagrete da casa, batata frita e farofa com ovos.", tag: "" },
-          { nome: "Peixe do dia na grelha", desc: "Acompanha arroz branco, batata frita ou purê, farofa ou legumes.", tag: "" },
-          { nome: "Galeto", desc: "Acompanha arroz branco, vinagrete da casa, batata frita e farofa com ovos.", tag: "" },
-          { nome: "Churrasco vegano", desc: "Acompanha arroz branco ou de brócolis, farofa vegana, batata frita e vinagrete da casa.", tag: "Vegano" }
+          { nome: "Picanha", desc: "Acompanha arroz branco, vinagrete da casa, batata frita e farofa com ovos.", tag: "", porcao: "Individual | Para compartilhar" },
+          { nome: "Ancho", desc: "Acompanha arroz branco, vinagrete da casa, batata frita e farofa com ovos.", tag: "", porcao: "Individual | Para compartilhar" },
+          { nome: "Peixe do dia na grelha", desc: "Acompanha arroz branco, batata frita ou purê, farofa ou legumes.", tag: "", porcao: "Individual | Para compartilhar" },
+          { nome: "Galeto", desc: "Acompanha arroz branco, vinagrete da casa, batata frita e farofa com ovos.", tag: "", porcao: "Individual | Para compartilhar" },
+          { nome: "Churrasco vegano", desc: "Acompanha arroz branco ou de brócolis, farofa vegana, batata frita e vinagrete da casa.", tag: "Vegano", porcao: "Individual | Para compartilhar" }
         ]
       },
       {
@@ -101,8 +100,8 @@ export const content = {
         ]
       },
       {
-        titulo: "Kids",
-        nota: "até 10 anos",
+        titulo: "Kids - até 10 anos",
+        nota: "",
         itens: [
           { nome: "Picadinho", desc: "Mini picadinho no molho de carne reduzido, arroz, ovo frito, feijão da casa, farofa crocante e banana da terra frita.", tag: "" },
           { nome: "Linguine ao pomodoro", desc: "Macarrão com molho pomodoro de tomate pelati e tomates frescos.", tag: "" }
@@ -168,14 +167,9 @@ export const content = {
     enderecoLabel: "Endereço",
     horarioLabel: "Funcionamento",
     horarios: [
-      { dia: "Segunda a quinta", hora: "8h30 – 20h" },
-      { dia: "Sexta a domingo", hora: "8h30 – 21h" },
-      { dia: "Café da manhã", hora: "8h30 – 11h30" },
-      { dia: "Brunch (sáb, dom e feriados)", hora: "10h – 14h" },
-      { dia: "Almoço", hora: "12h – 17h" },
-      { dia: "Jantar", hora: "18h – fechamento" }
+      { dia: "Todos os dias", hora: "8h30 – 21h" }
     ],
-    horarioNota: "Funcionamos todos os dias, acompanhando a operação do Parque Bondinho. Última entrada no parque: 18h30 (seg a qui) e 19h30 (sex a dom). Horários sujeitos a confirmação.",
+    horarioNota: "Funcionamos todos os dias, acompanhando a operação do Parque Bondinho. Horários sujeitos a confirmação.",
     localCta1: "Abrir no Google Maps",
 
     faqTitulo: "Perguntas frequentes",
@@ -195,7 +189,7 @@ export const content = {
 
     footerNav: "Navegar",
     footerContato: "Contato",
-    footerHorario: "Todos os dias, 8h30 às 20h (seg a qui) e até 21h (sex a dom).",
+    footerHorario: "Todos os dias, 8h30 às 21h.",
     footerCredito: "Gastronomia",
     footerCredito2: "Brasilidade"
   },
@@ -227,7 +221,6 @@ export const content = {
     menuLead: "Brazilian recipes reimagined with contemporary technique. The menu changes with the season and with the best our producers bring in.",
     legendaV: "Vegetarian",
     legendaVG: "Vegan",
-    legendaCompartilhar: "Grill: individual or to share",
     menuCta: "Open the full menu",
 
     secoes: [
@@ -263,13 +256,13 @@ export const content = {
       },
       {
         titulo: "From the grill",
-        nota: "individual or to share",
+        nota: "",
         itens: [
-          { nome: "Picanha", desc: "Served with rice, house vinaigrette, fries and farofa with eggs.", tag: "" },
-          { nome: "Ancho", desc: "Served with rice, house vinaigrette, fries and farofa with eggs.", tag: "" },
-          { nome: "Peixe do dia na grelha", desc: "Served with rice, fries or purée, farofa or vegetables.", tag: "" },
-          { nome: "Galeto", desc: "Served with rice, house vinaigrette, fries and farofa with eggs.", tag: "" },
-          { nome: "Churrasco vegano", desc: "Served with white or broccoli rice, vegan farofa, fries and house vinaigrette.", tag: "Vegan" }
+          { nome: "Picanha", desc: "Served with rice, house vinaigrette, fries and farofa with eggs.", tag: "", porcao: "Individual | To share" },
+          { nome: "Ancho", desc: "Served with rice, house vinaigrette, fries and farofa with eggs.", tag: "", porcao: "Individual | To share" },
+          { nome: "Peixe do dia na grelha", desc: "Served with rice, fries or purée, farofa or vegetables.", tag: "", porcao: "Individual | To share" },
+          { nome: "Galeto", desc: "Served with rice, house vinaigrette, fries and farofa with eggs.", tag: "", porcao: "Individual | To share" },
+          { nome: "Churrasco vegano", desc: "Served with white or broccoli rice, vegan farofa, fries and house vinaigrette.", tag: "Vegan", porcao: "Individual | To share" }
         ]
       },
       {
@@ -301,8 +294,8 @@ export const content = {
         ]
       },
       {
-        titulo: "Kids",
-        nota: "up to 10 years",
+        titulo: "Kids - up to 10 years",
+        nota: "",
         itens: [
           { nome: "Picadinho", desc: "Mini diced beef in reduced sauce, rice, fried egg, house beans, farofa and fried plantain.", tag: "" },
           { nome: "Linguine ao pomodoro", desc: "Linguine with pelati and fresh tomato pomodoro sauce.", tag: "" }
@@ -368,14 +361,9 @@ export const content = {
     enderecoLabel: "Address",
     horarioLabel: "Opening hours",
     horarios: [
-      { dia: "Monday to Thursday", hora: "8:30am – 8pm" },
-      { dia: "Friday to Sunday", hora: "8:30am – 9pm" },
-      { dia: "Breakfast", hora: "8:30 – 11:30am" },
-      { dia: "Brunch (Sat, Sun, holidays)", hora: "10am – 2pm" },
-      { dia: "Lunch", hora: "12 – 5pm" },
-      { dia: "Dinner", hora: "6pm – close" }
+      { dia: "Every day", hora: "8:30am – 9pm" }
     ],
-    horarioNota: "Open every day, following Parque Bondinho operating hours. Last park entry: 6:30pm (Mon–Thu) and 7:30pm (Fri–Sun). Times subject to confirmation.",
+    horarioNota: "Open every day, following Parque Bondinho operating hours. Times subject to confirmation.",
     localCta1: "Open in Google Maps",
 
     faqTitulo: "Frequently asked questions",
@@ -395,7 +383,7 @@ export const content = {
 
     footerNav: "Navigate",
     footerContato: "Contact",
-    footerHorario: "Every day, 8:30am to 8pm (Mon–Thu) and until 9pm (Fri–Sun).",
+    footerHorario: "Every day, 8:30am to 9pm.",
     footerCredito: "Gastronomy",
     footerCredito2: "Brazilianness"
   }
