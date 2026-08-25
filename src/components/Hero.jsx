@@ -5,24 +5,15 @@ export default function Hero({ t }) {
   return (
     <header
       id="topo"
-      className="araa-hero"
       style={{
         position: 'relative',
-        minHeight: '100svh',
+        minHeight: 'min(100svh, max(640px, 72vw))',
         display: 'flex',
         alignItems: 'flex-start',
         backgroundColor: '#123A1E',
         overflow: 'hidden'
       }}
     >
-      <style>{`
-        @media (max-width: 640px) {
-          .araa-hero {
-            min-height: min(100svh, 700px) !important;
-          }
-        }
-      `}</style>
-
       {/* Background Image */}
       <img
         src="/assets/praia.jpg"
@@ -33,7 +24,7 @@ export default function Hero({ t }) {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          objectPosition: 'center 40%'
+          objectPosition: '65% 30%'
         }}
       />
 
