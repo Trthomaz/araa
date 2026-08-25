@@ -51,12 +51,11 @@ export default function Navbar({ lang, setLang, t }) {
           left: 0,
           right: 0,
           zIndex: 90,
-          backgroundColor: scrolled ? 'rgba(18,58,30,0.96)' : 'rgba(18,58,30,0.90)',
-          backdropFilter: 'blur(10px)',
-          WebkitBackdropFilter: 'blur(10px)',
-          borderBottom: '1px solid rgba(245,231,190,0.18)',
-          transition: 'background-color 0.3s ease, padding 0.3s ease',
-          padding: scrolled ? '10px 0' : '14px 0'
+          backgroundColor: scrolled ? 'rgba(18,58,30,0.96)' : 'rgba(18,58,30,0.5)',
+          backdropFilter: scrolled ? 'blur(10px)' : 'blur(6px)',
+          WebkitBackdropFilter: scrolled ? 'blur(10px)' : 'blur(6px)',
+          transition: 'background-color 0.3s ease, padding 0.3s ease, backdrop-filter 0.3s ease',
+          padding: scrolled ? '12px 0' : '17px 0'
         }}
       >
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px' }}>
